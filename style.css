@@ -1,0 +1,147 @@
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1b1b1b;
+    color: white;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #3b5e2b;
+    padding: 20px 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+/* Menu */
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #7cff4f;
+}
+
+/* Página inicial */
+.inicio {
+    text-align: center;
+    padding: 100px 20px;
+
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    #4c8c3c;
+}
+
+.inicio h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.inicio p {
+    font-size: 20px;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+/* Botão */
+.botao {
+    display: inline-block;
+
+    margin-top: 30px;
+    padding: 15px 30px;
+
+    background-color: #5c9e3d;
+    color: white;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border: 3px solid #315522;
+
+    box-shadow: 0 5px 0 #315522;
+}
+
+.botao:hover {
+    background-color: #72b94d;
+    transform: translateY(2px);
+    box-shadow: 0 3px 0 #315522;
+}
+
+/* Área dos destaques */
+.destaques {
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.destaques h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 280px;
+    padding: 30px;
+
+    background-color: #292929;
+
+    border: 3px solid #444;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: #5c9e3d;
+}
+
+.card h3 {
+    color: #72b94d;
+    margin-bottom: 15px;
+    font-size: 23px;
+}
+
+.card p {
+    color: #dddddd;
+    line-height: 1.5;
+}
+
+/* Rodapé */
+footer {
+    background-color: #111111;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+
+    color: #aaaaaa;
+}
