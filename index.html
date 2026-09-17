@@ -1,94 +1,106 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Portal News</title>
-
+    <title>Portal TechNews - Notícias e Tecnologia</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
+    <!-- CABEÇALHO E MENU DE NAVEGAÇÃO -->
     <header>
-        <h1>📰 Portal News</h1>
-
+        <div class="logo">
+            <h1>🌐 Tech<span>News</span></h1>
+        </div>
         <nav>
-            <a href="index.html">Início</a>
-            <a href="#">Brasil</a>
-            <a href="#">Esportes</a>
-            <a href="#">Tecnologia</a>
-            <a href="#">Mundo</a>
+            <ul>
+                <li><a href="#" class="ativo">Início</a></li>
+                <li><a href="#">Tecnologia</a></li>
+                <li><a href="#">Mundo</a></li>
+                <li><a href="#">Cultura</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
         </nav>
     </header>
 
-    <main>
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="container">
 
-        <section class="banner">
-            <h2>Últimas Notícias</h2>
-
-            <p>
-                Informação e notícias em um só lugar.
-            </p>
+        <!-- DESTAQUE PRINCIPAL -->
+        <section class="destaque">
+            <article class="card-destaque">
+                <img src="https://picsum.photos/800/400?random=1" alt="Imagem da notícia principal">
+                <div class="conteudo-destaque">
+                    <span class="tag">EM DESTAQUE</span>
+                    <h2>Inteligência Artificial revoluciona a criação de sites e softwares em 2026</h2>
+                    <p>Novas ferramentas estão auxiliando estudantes e desenvolvedores a criar projetos incríveis em tempo recorde. Saiba como começar hoje mesmo!</p>
+                    <a href="#" class="btn">Ler matéria completa</a>
+                </div>
+            </article>
         </section>
 
-        <section class="noticias">
-
-            <h2>Principais notícias</h2>
-
-            <div class="cards">
-
+        <!-- SEÇÃO DE NOTÍCIAS (CARDS) -->
+        <section class="noticias-grid">
+            <h3>🔥 Útimas Notícias</h3>
+            
+            <div class="grid">
+                <!-- Card 1 -->
                 <article class="card">
-                    <div class="imagem">🌎</div>
-
-                    <h3>Notícias do Mundo</h3>
-
-                    <p>
-                        Confira os principais acontecimentos
-                        ao redor do mundo.
-                    </p>
-
-                    <a href="#">Leia mais</a>
+                    <img src="https://picsum.photos/400/250?random=2" alt="Imagem Notícia">
+                    <div class="card-corpo">
+                        <span class="tag-categoria">Tecnologia</span>
+                        <h4>O avanço dos computadores quânticos</h4>
+                        <p>Entenda como essa nova tecnologia promete mudar a segurança da informação no mundo.</p>
+                        <a href="#" class="btn-card">Leia mais →</a>
+                    </div>
                 </article>
 
+                <!-- Card 2 -->
                 <article class="card">
-                    <div class="imagem">⚽</div>
-
-                    <h3>Esportes</h3>
-
-                    <p>
-                        Veja as principais novidades
-                        do mundo dos esportes.
-                    </p>
-
-                    <a href="#">Leia mais</a>
+                    <img src="https://picsum.photos/400/250?random=3" alt="Imagem Notícia">
+                    <div class="card-corpo">
+                        <span class="tag-categoria">Mundo</span>
+                        <h4>Novas descobertas na exploração espacial</h4>
+                        <p>Telescópios captam imagens impressionantes de galáxias nunca vistas antes.</p>
+                        <a href="#" class="btn-card">Leia mais →</a>
+                    </div>
                 </article>
 
+                <!-- Card 3 -->
                 <article class="card">
-                    <div class="imagem">💻</div>
-
-                    <h3>Tecnologia</h3>
-
-                    <p>
-                        Descubra novidades e informações
-                        sobre tecnologia.
-                    </p>
-
-                    <a href="#">Leia mais</a>
+                    <img src="https://picsum.photos/400/250?random=4" alt="Imagem Notícia">
+                    <div class="card-corpo">
+                        <span class="tag-categoria">Jogos</span>
+                        <h4>Lançamentos de games mais aguardados</h4>
+                        <p>Confira a lista dos jogos que promovem gráficos hiper-realistas para esta temporada.</p>
+                        <a href="#" class="btn-card">Leia mais →</a>
+                    </div>
                 </article>
-
             </div>
+        </section>
 
+        <!-- ÁREA INTERATIVA: ENQUETE DO LEITOR -->
+        <section class="interativo">
+            <div class="caixa-interativa">
+                <h3>🗳️ Enquete da Semana</h3>
+                <p>Qual tecnologia você acha que mais vai mudar o futuro?</p>
+                <form class="opcoes-enquete">
+                    <label><input type="radio" name="enquete" value="ia"> Inteligência Artificial</label>
+                    <label><input type="radio" name="enquete" value="robos"> Robótica Avançada</label>
+                    <label><input type="radio" name="enquete" value="energia"> Energias Renováveis</label>
+                    <button type="button" class="btn">Votar</button>
+                </form>
+            </div>
         </section>
 
     </main>
 
+    <!-- RODAPÉ -->
     <footer>
-        <p>Portal News - Projeto Escolar</p>
+        <p>&copy; 2026 Portal TechNews - Projeto Desenvolvido para a Aula de Programação.</p>
+        <p>Feito com HTML5 e CSS3 🚀</p>
     </footer>
 
 </body>
-
 </html>
